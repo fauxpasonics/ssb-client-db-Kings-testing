@@ -1,0 +1,3 @@
+CREATE SCHEMA [rptdev]
+AUTHORIZATION [dbo]
+GO

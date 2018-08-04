@@ -1,0 +1,32 @@
+CREATE TABLE [dbo].[Appetize_Orders]
+(
+[order_id] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[id] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[name] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[email] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[mobile] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[level] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[section] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[row] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[seat] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[user_seat_id] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[order_source] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[total] [numeric] (13, 4) NULL,
+[original_subtotal] [numeric] (13, 4) NULL,
+[tip] [numeric] (13, 4) NULL,
+[fee] [numeric] (13, 4) NULL,
+[tax] [numeric] (13, 4) NULL,
+[status] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[vendor_id] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[vendor_name] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[order_mode] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[payment_type] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[timezone] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[order_date] [datetime2] NULL,
+[date_modified] [datetime2] NULL,
+[date_completed] [datetime2] NULL,
+[offline_mode] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[device_token] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[card_type] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO

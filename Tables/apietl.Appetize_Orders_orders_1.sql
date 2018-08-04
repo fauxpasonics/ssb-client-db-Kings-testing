@@ -1,0 +1,40 @@
+CREATE TABLE [apietl].[Appetize_Orders_orders_1]
+(
+[ETL__Appetize_Orders_orders_id] [uniqueidentifier] NOT NULL,
+[ETL__Appetize_Orders_id] [uniqueidentifier] NULL,
+[order_id] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[user_seat_id] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[order_source] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[total] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[discount] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[original_subtotal] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[promo_code] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[tip] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[fee] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[tax] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[status] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[vendor_id] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[vendor_name] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[venue_id] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[venue_name] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[order_mode] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[payment_type] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[timezone] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[order_date] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[date_modified] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[date_completed] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[offline_mode] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[device_token] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[card_type] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[employee_id] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[employee_name] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ext_vendor_id] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[device_order_time] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[server_time] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[eventId] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[device_type] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[device_name] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO
+ALTER TABLE [apietl].[Appetize_Orders_orders_1] ADD CONSTRAINT [PK__Appetize__A25090370A34842C] PRIMARY KEY CLUSTERED  ([ETL__Appetize_Orders_orders_id])
+GO

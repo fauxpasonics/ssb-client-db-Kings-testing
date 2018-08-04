@@ -1,0 +1,42 @@
+CREATE TABLE [ods].[Snapshot_Eloqua_visitors]
+(
+[Eloqua_visitorsSK] [int] NOT NULL IDENTITY(1, 1),
+[visitorId] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[createdAt] [datetime] NULL,
+[Browser_Type] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IPAddress] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Total_Pages] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Total_Time] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Total_Visits] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Name] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Current_Visit_Length] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Current_Total_Pages] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FirstVisitDateAndTime] [datetime] NULL,
+[FirstPageInVisit] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastPageInVisit] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastVisitDateAndTime] [datetime] NULL,
+[TimeZoneOffsetMin] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TimeZone] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[externalId] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[contactId] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[currentStatus] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CountryFromIP] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CompanyNameFromIP1] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ISPFromIP] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ProvinceFromIP] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CityFromIP] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ZipCodeFromIP] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LatitudeFromIP] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LongitudeFromIP] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[HostName] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CompanyDNSName] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CountryName] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ETL_CreatedOn] [datetime] NULL,
+[ETL_CreatedBy] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ETL_UpdatedOn] [datetime] NULL,
+[ETL_UpdatedBy] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RecordEndDate] [datetime] NULL
+)
+GO
+ALTER TABLE [ods].[Snapshot_Eloqua_visitors] ADD CONSTRAINT [PK__Snapshot__19FFEAE28FAAD7F1] PRIMARY KEY CLUSTERED  ([Eloqua_visitorsSK])
+GO
